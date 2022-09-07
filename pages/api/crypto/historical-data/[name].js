@@ -3,9 +3,7 @@ import corsMiddleware from "../../../../utils/corsMiddleware"
 
 import { DOMParser, parseHTML } from 'linkedom';
 
-import canvas from "canvas";
 import axios from "axios";
-import jsdom from "jsdom";
 
 // Initializing the cors middleware
 const cors = Cors({
