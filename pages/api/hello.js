@@ -1,3 +1,6 @@
+import axios from "axios";
+import jsdom from "jsdom";
+
 export default async function handler(req, res) {
 	const url = "https://www.google.com/search?q=hello+world";
 	const response = await axios.get(url);
