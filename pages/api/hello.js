@@ -10,7 +10,7 @@ const cors = Cors({
 })
 
 export default async function handler(req, res) {
-	// await corsMiddleware(req, res, cors);
+	await corsMiddleware(req, res, cors);
 	const url = "https://www.google.com/search?q=hello+world";
 	const response = await axios.get(url);
 	const html = response.data;
