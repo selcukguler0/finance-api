@@ -1,7 +1,6 @@
 import * as Cors from "cors"
 import corsMiddleware from "../../../utils/corsMiddleware"
 
-import canvas from "canvas";
 import axios from "axios";
 import jsdom from "jsdom";
 
