@@ -1,0 +1,96 @@
+import Callout from "nextra-theme-docs/callout";
+import allCryptos from "../_examples/allCryptos.js";
+import Highlight, { defaultProps } from "prism-react-renderer";
+
+<>
+
+<h1>Get List of All Cryptos</h1>
+<hr/>
+<h3>Basic Usage</h3>
+<Callout emoji="👾">
+	<a
+		href="https://api.finance.selcukguler.com/api/crypto/allCryptos"
+		taget="_blank_">
+		/api/crypto/allCryptos
+	</a>
+</Callout>
+<hr/>
+<h3>Pagination</h3>
+<p>Default Value: <strong>1</strong></p>
+<ul>
+	<li>
+		1
+	</li>
+	<li>
+		2
+	</li>
+	<li>
+		...
+	</li>
+	<li>
+		970 ...
+	</li>
+</ul>
+<Callout emoji="👾">
+	<a
+		href="https://api.finance.selcukguler.com/api/crypto/allCryptos?page=25"
+		taget="_blank_">
+		/api/crypto/allCryptos?page=25
+	</a>
+</Callout>
+<hr/>
+<h3>Count</h3>
+<p>Default Value: <strong>25</strong></p>
+<ul>
+	<li>
+		25
+	</li>
+	<li>
+		50
+	</li>
+	<li>
+		100
+	</li>
+</ul>
+<Callout emoji="👾">
+	<a
+		href="https://api.finance.selcukguler.com/api/crypto/allCryptos?count=25"
+		taget="_blank_">
+		/api/crypto/allCryptos?count=25
+	</a>
+</Callout>
+<hr/>
+<h3>Display Type</h3>
+<p>Default Value: <strong>Advanced</strong></p>
+<ul>
+	<li>
+		Basic (return => name, symbol, price)
+	</li>
+	<li>
+		Advanced (return => all available data)
+	</li>
+</ul>
+<Callout emoji="👾">
+	<a
+		href="https://api.finance.selcukguler.com/api/crypto/allCryptos?type=basic"
+		taget="_blank_">
+		/api/crypto/allCryptos?type=basic
+	</a>
+</Callout>
+<hr/>
+<h2>Example Output</h2>
+<Highlight {...defaultProps} code={allCryptos} language="json">
+	{({ className, style, tokens, getLineProps, getTokenProps }) => (
+		<pre className={className} style={style}>
+			{tokens.map((line, i) => (
+				<div {...getLineProps({ line, key: i })}>
+					{line.map((token, key) => (
+						<span {...getTokenProps({ token, key })} />
+					))}
+				</div>
+			))}
+		</pre>
+	)}
+</Highlight>
+
+</>

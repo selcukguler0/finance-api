@@ -1,4 +1,4 @@
-{
+const allCryptos = `[{
 	"page": 1,
 	"count": 25,
 	"data": [
@@ -26,5 +26,7 @@
 			"totalVolume": "20.463B",
 			"circulatingSupply": "122.289M"
 		}
+		...
 	]
-}
+}]`
+export default allCryptos;

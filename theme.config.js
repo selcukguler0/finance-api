@@ -20,7 +20,7 @@ export default {
 		<>
 			{/* <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			<meta name="description" content="Yahoo Finance Api:" /> */}
-			<script
+			{/* <script
 				lang="javascript"
 				dangerouslySetInnerHTML={{
 					__html: `if (!window.localStorage.getItem("theme_default")) {
@@ -30,7 +30,7 @@ export default {
       document.documentElement.classList.remove("light");
     }`,
 				}}
-			/>;
+			/>; */}
 		</>
 	),
 

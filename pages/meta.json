@@ -1,4 +1,5 @@
 {	
 	"index": "Introduction",
-	"endpoints": "Endpoints"
+	"endpoints": "Endpoints",
+	"endpoints/allCryptos": "All Cryptocurrencies"
 }
