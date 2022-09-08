@@ -4,7 +4,7 @@ import Highlight, { defaultProps } from "prism-react-renderer";
 import Bleed from 'nextra-theme-docs/bleed'
 
 
-<>
+<div style={{marginLeft:"0",width:"70vw"}}>
 <h1>Get Single Crypto Info</h1>
 <p>Get the price, marketcap, volume, and more for a single currency.</p>
 <hr/>
@@ -35,7 +35,7 @@ import Bleed from 'nextra-theme-docs/bleed'
 </ul>
 <hr/>
 <h2>Example Output</h2>
-<div style={{width:"fit-content"}}>
+<div>
 <Highlight {...defaultProps} code={allCryptos} language="json">
 	{({ className, style, tokens, getLineProps, getTokenProps }) => (
 		<pre className={className} style={style}>
@@ -51,4 +51,4 @@ import Bleed from 'nextra-theme-docs/bleed'
 </Highlight>
 </div>
 
-</>
+</div>
