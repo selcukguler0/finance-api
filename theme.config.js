@@ -1,7 +1,7 @@
 export default {
-	projectLink: 'https://github.com/shuding/nextra', // GitHub link in the navbar
-	docsRepositoryBase: 'https://github.com/shuding/nextra/blob/master', // base URL for the docs repository
-	// titleSuffix: 'Yahoo Finance Api',
+	projectLink: 'https://github.com/selcukguler0/finance-api', // GitHub link in the navbar
+	docsRepositoryBase: 'https://github.com/selcukguler0/finance-api', // base URL for the docs repository
+	titleSuffix: 'Yahoo Finance Api',
 	nextLinks: true,
 	prevLinks: true,
 	search: true,

@@ -1,0 +1,50 @@
+import Callout from "nextra-theme-docs/callout";
+import allCryptos from "../../_examples/singleCrypto.js";
+import Highlight, { defaultProps } from "prism-react-renderer";
+
+<>
+<h1>Get Single Crypto Info</h1>
+<p>Get the price, marketcap, volume, and more for a single currency.</p>
+<hr/>
+<h3>Basic Usage</h3>
+<Callout emoji="👾">
+	<a
+		href="https://api.finance.selcukguler.com/api/crypto/btc"
+		target="_blank">
+		/api/crypto/[coin-symbol]
+	</a>
+</Callout>
+<hr/>
+<h3>Coin Symbol</h3>
+<p>Default Value: <strong>BTC</strong></p>
+<ul>
+	<li>
+		ETH
+	</li>
+	<li>
+		LTC
+	</li>
+	<li>
+		XRP
+	</li>
+	<li>
+		...
+	</li>
+</ul>
+<hr/>
+<h2>Example Output</h2>
+<Highlight {...defaultProps} code={allCryptos} language="json">
+	{({ className, style, tokens, getLineProps, getTokenProps }) => (
+		<pre className={className} style={style}>
+			{tokens.map((line, i) => (
+				<div {...getLineProps({ line, key: i })}>
+					{line.map((token, key) => (
+						<span {...getTokenProps({ token, key })} />
+					))}
+				</div>
+			))}
+		</pre>
+	)}
+</Highlight>
+
+</>
