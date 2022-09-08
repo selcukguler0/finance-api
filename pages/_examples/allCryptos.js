@@ -32,4 +32,4 @@ const allCryptos = `
 		]
 	}
 ]`
-export default allCryptos;
+export {allCryptos};

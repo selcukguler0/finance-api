@@ -15,4 +15,4 @@ const singleCrypto = `{
     "volume": "36,210,528,256",
     "volume24Hr": "36.21B"
 }`
-export default singleCrypto;
+export {singleCrypto};

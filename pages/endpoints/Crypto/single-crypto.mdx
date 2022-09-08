@@ -1,5 +1,5 @@
 import Callout from "nextra-theme-docs/callout";
-import allCryptos from "../../_examples/singleCrypto.js";
+import {singleCrypto} from "../../_examples/singleCrypto.js";
 import Highlight, { defaultProps } from "prism-react-renderer";
 import Bleed from 'nextra-theme-docs/bleed'
 
@@ -34,7 +34,7 @@ import Bleed from 'nextra-theme-docs/bleed'
 <hr/>
 <h2>Example Output</h2>
 <div>
-<Highlight {...defaultProps} code={allCryptos} language="json">
+<Highlight {...defaultProps} code={singleCrypto} language="json">
 	{({ className, style, tokens, getLineProps, getTokenProps }) => (
 		<pre className={className} style={style}>
 			{tokens.map((line, i) => (
