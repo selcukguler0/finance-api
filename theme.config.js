@@ -1,7 +1,6 @@
 import Image from "next/image"
 export default {
 	projectLink: 'https://github.com/selcukguler0/finance-api', // GitHub link in the navbar
-	docsRepositoryBase: 'https://github.com/selcukguler0/finance-api', // base URL for the docs repository
 	nextLinks: true,
 	prevLinks: true,
 	search: true,

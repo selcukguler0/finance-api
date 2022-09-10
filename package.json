@@ -13,8 +13,10 @@
   "dependencies": {
     "axios": "^0.27.2",
     "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
     "jsdom": "^20.0.0",
     "linkedom": "^0.14.12",
+    "mysql2": "^2.3.3",
     "next": "12.2.5",
     "nextra": "^1.1.0",
     "nextra-theme-docs": "^1.2.6",

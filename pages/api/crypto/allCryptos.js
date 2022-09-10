@@ -32,8 +32,8 @@ export default async function handler(req, res) {
 		const xVolume24h = dom.window.document.querySelectorAll('[aria-label="Volume in Currency (24Hr)"]')
 		const xTotalVolume = dom.window.document.querySelectorAll('[aria-label="Total Volume All Currencies (24Hr)"]')
 		const xCirculatingSupply = dom.window.document.querySelectorAll('[aria-label="Circulating Supply"]')
-		const x52WeekHigh = dom.window.document.querySelectorAll('[aria-label="52 Week Range"]')
-		const xDayChart = dom.window.document.querySelectorAll('[aria-label="Day Chart"]')
+		// const x52WeekHigh = dom.window.document.querySelectorAll('[aria-label="52 Week Range"]')
+		// const xDayChart = dom.window.document.querySelectorAll('[aria-label="Day Chart"]')
 		const cryptos = []
 		const cryptosBasic = []
 		var i = 0;
