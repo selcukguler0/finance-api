@@ -1,4 +1,4 @@
-Another chat-app made with Node.js Backend and React Frontend
+Yahoo Finance Api made with Node.js Backend and React Frontend
 
 ## Setup 
 
